@@ -1,0 +1,51 @@
+h1 {
+    color: black; /* Define a cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+body {
+    display: flex; /* Esta propriedade define o container como um container flexível, o que significa que seus filhos (os elementos dentro do container) podem ser dispostos usando as propriedades flexíveis. Isso é útil para alinhar itens verticalmente e horizontalmente. */
+    justify-content: center;
+    align-items: top;
+    height: 100vh; /* A unidade vh significa “viewport height” (altura da janela de visualização). Portanto, 100vh é igual a 100% da altura da janela de visualização. Isso faz com que o body ocupe toda a altura da janela do navegador. */
+    margin: 20; /* A propriedade margin define a margem externa do elemento. Neste caso, estamos definindo a margem como 0, o que significa que não haverá espaço extra ao redor do body. */
+    background-color: #d3cfcf;
+    font-family: Arial, sans-serif;
+    /* Para incluir uma imagem de fundo */
+    background-image: url('imagemDeFundo.jpeg');
+    background-size: cover; /* Para a imagem de fundo cobrir todo o corpo da página */
+    background-repeat: no-repeat; /* Para a imagem de fundo não se repetir */
+}
+
+/* Adicionada a div com a classe “container” ao redor do conteúdo e o CSS para centralizar essa div na página. O container é então centralizado verticalmente dentro do body. */
+.container {
+    text-align: center;
+    height: 100%; /* Isso define a altura do container como 50% da altura do seu elemento pai, que neste caso é o body. Como o body tem uma altura de 100vh, o container terá uma altura de 100vh. */
+    margin-top: auto; /* Isso faz com que o navegador automaticamente calcule e aplique margens iguais na parte superior e inferior do container, efetivamente centralizando o container verticalmente dentro do seu elemento pai. */
+    margin-bottom: auto; /* Isso faz com que o navegador automaticamente calcule e aplique margens iguais na parte superior e inferior do container, efetivamente centralizando o container verticalmente dentro do seu elemento pai. */
+}
+
+#tabelaTarefas {
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse; /* Isso faz com que apareça uma borda única para cada linha de tarefa */
+    border-spacing: auto; /* Adicione esta linha */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+#botaoAdicionar {
+    margin-left: 5px;
+}
+
+button {
+    margin-left: 20px;
+}
+
+/* Código CSS usado para tachar ou não o texto da tarefa quando a caixa de seleção é marcada. */
+.tarefa-concluida {
+    text-decoration: line-through;
+}
