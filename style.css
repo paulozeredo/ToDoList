@@ -1,0 +1,29 @@
+h1 {
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    margin: 20;
+}
+
+.container {
+    text-align: center;
+}
+
+#tabelaTarefas {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#botaoAdicionar {
+    margin-left: 5px;
+}
+
+button {
+    margin-left: 20px;
+}
